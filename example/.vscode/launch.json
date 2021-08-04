@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nussi_text_field",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "nussi_text_field (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "slidable_text_field",
+            "cwd": "slidable_text_field",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "slidable_text_field (profile mode)",
+            "cwd": "slidable_text_field",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}

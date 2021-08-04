@@ -1,0 +1,89 @@
+import 'dart:developer';
+import 'dart:math' as math;
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:intl/intl.dart';
+import 'package:slidable_text_field/slidable_text_field.dart';
+
+class NussiTextFieldTest extends StatelessWidget {
+  NussiTextFieldTest({Key? key}) : super(key: key);
+
+  final formater = NumberFormat("\$#,##0.00", "en_US");
+  final max = 150000;
+  final TextEditingController inputcontroller = TextEditingController();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.blueGrey.shade200,
+      body: Center(
+        child: Card(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5),
+                      child: Text(
+                        "Amount you want to finance:",
+                        style: TextStyle(fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        width: 180,
+                        child: SlidableTextField(
+                          // customTextFormater: NumberFormat("\$#,##0.00", "en_US"),
+                          textFormater: TextFormater.IR_MONEY,
+                          max: 150000,
+                          startValue: 10000,
+                          controller: inputcontroller,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Card(
+                  color: Colors.blue.shade100,
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "Line of Credit:",
+                          textScaleFactor: .9,
+                          style: TextStyle(color: Colors.blueGrey.shade700),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          formater.format(max),
+                          style: TextStyle(
+                              letterSpacing: .8,
+                              color: Colors.blue.shade700,
+                              fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
