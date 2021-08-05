@@ -16,7 +16,6 @@ class SlidableTextField extends StatelessWidget {
       {Key? key,
       NumberFormat? customTextFormater,
       TextFormater? textFormater,
-      this.textDirection = TextDirection.ltr,
       required this.max,
       final double startValue = 0,
       required this.controller})
@@ -28,7 +27,6 @@ class SlidableTextField extends StatelessWidget {
   }
   final NumberFormat formater;
   final double max;
-  final TextDirection textDirection;
   final TextEditingController controller;
   final ValueNotifier<int> percent = ValueNotifier(0);
   final ValueNotifier<double> currentValue = ValueNotifier(0);
