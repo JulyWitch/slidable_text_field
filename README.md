@@ -9,6 +9,6 @@ A text field combined with a slider to make user experince smooth inspired by [N
 
 :ballot_box_with_check: plain number
 
-[![USD](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/usd.gif)]
-[![Euro](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/euro.gif)]
-[![IRR](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/ir.gif)]
+![USD](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/usd.gif)
+![Euro](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/euro.gif)
+![IRR](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/ir.gif)
