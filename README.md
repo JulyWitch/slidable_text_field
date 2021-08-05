@@ -6,6 +6,6 @@ A text field combined with a slider to make user experince smooth inspired by [N
 [x] euro
 [x] plain number
 
-[![RfHniQ.md.gif](https://iili.io/RfHniQ.md.gif)](https://freeimage.host/i/RfHniQ)
-[![RfHCWx.md.gif](https://iili.io/RfHCWx.md.gif)](https://freeimage.host/i/RfHCWx)
-[![RfHxfV.md.gif](https://iili.io/RfHxfV.md.gif)](https://freeimage.host/i/RfHxfV)
+[![USD](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/usd.gif)]
+[![Euro](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/euro.gif)]
+[![IRR](https://raw.githubusercontent.com/JulyWitch/slidable_text_field/master/docs/ir.gif)]
